@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayush Sharma — Developer Portfolio</title>
+  <meta name="description" content="Personal portfolio of Ayush Sharma, aspiring Web & Full-Stack Developer. Minimal dark editorial design featuring signature scroll-media animations and interactive experiments.">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ayush Sharma — Developer Portfolio">
+  <meta property="og:description" content="Minimal, high-end personal portfolio of Ayush Sharma, aspiring Web & Full-Stack Developer.">
+  <meta property="og:image" content="assets/ayush-profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ayush Sharma — Developer Portfolio">
+  <meta name="twitter:description" content="Minimal, high-end personal portfolio of Ayush Sharma, aspiring Web & Full-Stack Developer.">
+  <meta name="twitter:image" content="assets/ayush-profile.jpg">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23050505'/><text x='16' y='21' font-family='sans-serif' font-size='15' fill='%233fd6c6' text-anchor='middle' font-weight='700'>AS</text></svg>">
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="brand-mark" aria-label="Ayush Sharma Home">
+        <span class="brand-name">Ayush Sharma</span>
+        <span class="brand-meta">DEV / 2026</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">01 About</a></li>
+          <li><a href="#skills" class="nav-link">02 Skills</a></li>
+          <li><a href="#experiments" class="nav-link">03 Experiments</a></li>
+          <li><a href="#contact" class="nav-link">04 Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Status Indicator Pill -->
+      <div class="nav-status">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>Building &amp; Learning</span>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav" aria-hidden="true">
+    <ul class="mobile-nav-list">
+      <li><a href="#about" class="mobile-nav-link">01 / About</a></li>
+      <li><a href="#skills" class="mobile-nav-link">02 / What I Work With</a></li>
+      <li><a href="#experiments" class="mobile-nav-link">03 / Selected Experiments</a></li>
+      <li><a href="#contact" class="mobile-nav-link">04 / Get In Touch</a></li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <div class="nav-status" style="align-self: flex-start;">
+        <span class="status-dot"></span>
+        <span>Building &amp; Learning</span>
+      </div>
+      <div class="mono-label" style="font-size: 0.6875rem;">
+        Ayush Sharma · Portfolio 2026
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Column: Content -->
+          <div class="hero-content">
+            <div class="hero-kicker-wrapper">
+              <span class="hero-kicker">INDEPENDENT WEB DEVELOPER</span>
+              <span class="hero-kicker-dot" aria-hidden="true"></span>
+              <span class="mono-label mono-accent">SILIGURI, IN</span>
+            </div>
+
+            <h1 class="hero-title">Hey, I'm Ayush Sharma.</h1>
+
+            <p class="hero-statement">
+              I build digital experiences for the web.
+              <span>Turning code and design into responsive, purposeful interfaces.</span>
+            </p>
+
+            <p class="hero-description">
+              I'm a technology enthusiast and aspiring full-stack developer who enjoys turning ideas into functional, beautiful, and responsive digital experiences.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#experiments" class="btn-pill btn-primary">
+                Explore My Work
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+              <a href="#contact" class="btn-pill btn-secondary">
+                Let's Connect
+              </a>
+            </div>
+
+            <div class="hero-motto">
+              <span class="hero-motto-accent" aria-hidden="true"></span>
+              <span>Currently learning. Constantly building. Always curious.</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Editorial Portrait Preview (4:5 Crop) -->
+          <div class="hero-portrait-stage">
+            <div class="hero-portrait-card">
+              <img 
+                src="assets/ayush-profile.jpg" 
+                alt="Ayush Sharma — Web Developer Portrait" 
+                class="hero-portrait-img"
+                loading="eager"
+              >
+            </div>
+            <div class="hero-portrait-meta">
+              <span>FIG. 01 — PORTRAIT</span>
+              <button class="hero-scroll-prompt" type="button" aria-label="Scroll to expand portrait">
+                <span>SCROLL TO EXPAND</span>
+                <span aria-hidden="true">↓</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hero Bottom Metadata Row -->
+        <div class="hero-metadata-row">
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">DISCIPLINE</span>
+            <span class="hero-meta-value">Web &amp; Full-Stack Development</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">EDUCATION</span>
+            <span class="hero-meta-value">BCA · Inspiria Knowledge Campus</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">LOCATION</span>
+            <span class="hero-meta-value">India (IST / UTC+5:30)</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">STATUS</span>
+            <span class="hero-meta-value">Open to Learning &amp; Projects</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SIGNATURE SCROLL MEDIA PHOTO ANIMATION -->
+    <!-- Cinematic Framer-inspired Scroll Media Component -->
+    <section class="scroll-media-section" id="scroll-media-section" aria-label="Signature Visual Scroll Media Stage">
+      <div class="scroll-media-sticky" id="scroll-media-sticky">
+        
+        <!-- Expanding Media Frame -->
+        <div class="scroll-media-frame" id="scroll-media-frame">
+          <img 
+            src="assets/ayush-profile.jpg" 
+            alt="Ayush Sharma — Editorial Showcase" 
+            class="scroll-media-img"
+            id="scroll-media-img"
+          >
+
+          <!-- Editorial HUD Vignette Overlay -->
+          <div class="scroll-media-overlay" id="scroll-media-overlay">
+            <div class="scroll-media-hud-top">
+              <span>FIG. 02 // MEDIA STAGE</span>
+              <span>PORTFOLIO EDITORIAL</span>
+            </div>
+
+            <div class="scroll-media-hud-bottom">
+              <div class="scroll-media-caption">
+                <span class="scroll-media-caption-title">Ayush Sharma</span>
+                <span class="scroll-media-caption-sub">BUILDING DIGITAL EXPERIENCES WITH PURPOSE</span>
+              </div>
+              <div class="mono-label" style="color: rgba(242, 242, 242, 0.7); font-size: 0.6875rem;">
+                2026 EDITION
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Scroll Progress HUD -->
+        <div class="scroll-hud-indicator" aria-hidden="true">
+          <span>SCROLL PROGRESS</span>
+          <div class="scroll-hud-bar">
+            <div class="scroll-hud-fill" id="scroll-hud-fill"></div>
+          </div>
+          <span id="scroll-hud-value">0%</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. ABOUT SECTION -->
+    <section class="section-about" id="about">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">01 / ABOUT</span>
+          <h2 class="section-title">A little about what I do.</h2>
+          <p class="section-subtitle">Bridging the gap between conceptual curiosity and practical code.</p>
+        </header>
+
+        <div class="about-grid">
+          <!-- Text column -->
+          <div class="about-text-column">
+            <p class="about-lead">
+              I'm Ayush, a BCA student with a strong interest in technology, web development, and digital product creation. I enjoy understanding how websites work, experimenting with new tools, and transforming creative ideas into real digital experiences.
+            </p>
+
+            <p class="about-body">
+              My journey is focused on building strong frontend fundamentals while gradually exploring backend development and full-stack technologies. I believe the best way to learn is to keep building.
+            </p>
+
+            <!-- Philosophy card -->
+            <div class="about-philosophy-box">
+              <p class="about-philosophy-quote">
+                "Curiosity drives the craft. Writing clean markup, studying design systems, and pushing pixels with purpose."
+              </p>
+              <span class="about-philosophy-author">Philosophy &amp; Mindset · Ayush Sharma</span>
+            </div>
+          </div>
+
+          <!-- Compact Information Layout -->
+          <div class="about-card-column">
+            <div class="about-card-header">
+              <span class="mono-label">PROFILE SPECIFICATIONS</span>
+              <span class="mono-label mono-accent">INDEX 01</span>
+            </div>
+
+            <div class="about-info-list">
+              <div class="about-info-item">
+                <span class="about-info-key">Name</span>
+                <span class="about-info-value">Ayush Sharma</span>
+              </div>
+
+              <div class="about-info-item">
+                <span class="about-info-key">Education</span>
+                <span class="about-info-value">BCA — Inspiria Knowledge Campus</span>
+              </div>
+
+              <div class="about-info-item">
+                <span class="about-info-key">Expected Graduation</span>
+                <span class="about-info-value">2030</span>
+              </div>
+
+              <div class="about-info-item">
+                <span class="about-info-key">Interest</span>
+                <span class="about-info-value">Web Development &amp; Technology</span>
+              </div>
+
+              <div class="about-info-item">
+                <span class="about-info-key">Learning Focus</span>
+                <span class="about-info-value">Frontend and Full-Stack Development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. SKILLS SECTION (WHAT I WORK WITH) -->
+    <section class="section-skills" id="skills">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">02 / WHAT I WORK WITH</span>
+          <h2 class="section-title">Tools, technologies &amp; things I'm exploring.</h2>
+          <p class="section-subtitle">A curated view of tools I use today and domains I am actively exploring.</p>
+        </header>
+
+        <div class="skills-editorial-table">
+          
+          <!-- Group 1: Core Technologies -->
+          <div class="skills-group">
+            <div class="skills-group-header">
+              <span class="skills-group-title">01 / Core Web Technologies</span>
+              <span class="skills-group-count">3 Technologies</span>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-row">
+                <div class="skill-main">
+                  <span class="skill-index">01</span>
+                  <span class="skill-name">HTML5</span>
+                </div>
+                <span class="skill-tag active">[ CORE STANDARD ]</span>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-main">
+                  <span class="skill-index">02</span>
+                  <span class="skill-name">CSS3</span>
+                </div>
+                <span class="skill-tag active">[ CORE STYLING ]</span>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-main">
+                  <span class="skill-index">03</span>
+                  <span class="skill-name">JavaScript</span>
+                </div>
+                <span class="skill-tag active">[ ES6+ LOGIC ]</span>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-main">
+                  <span class="skill-index">04</span>
+                  <span class="skill-name">Responsive Web Design</span>
+                </div>
+                <span class="skill-tag active">[ FLUID ARCHITECTURE ]</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group 2: Tools & Workflow -->
+          <div class="skills-group">
+            <div class="skills-group-header">
+              <span class="skills-group-title">02 / Design &amp; Tooling</span>
+              <span class="skills-group-count">2 Workflows</span>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-row">
+                <div class="skill-main">
+                  <span class="skill-index">05</span>
+                  <span class="skill-name">Figma</span>
+                </div>
+                <span class="skill-tag">[ UI/UX PROTOTYPING ]</span>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-main">
+                  <span class="skill-index">06</span>
+                  <span class="skill-name">Git &amp; GitHub</span>
+                </div>
+                <span class="skill-tag">[ VERSION CONTROL ]</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group 3: Engineering Domains -->
+          <div class="skills-group">
+            <div class="skills-group-header">
+              <span class="skills-group-title">03 / Engineering Domains</span>
+              <span class="skills-group-count">2 Disciplines</span>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-row">
+                <div class="skill-main">
+                  <span class="skill-index">07</span>
+                  <span class="skill-name">Frontend Development</span>
+                </div>
+                <span class="skill-tag active">[ ACTIVE FOCUS ]</span>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-main">
+                  <span class="skill-index">08</span>
+                  <span class="skill-name">Backend Development</span>
+                </div>
+                <span class="skill-tag learning">Currently Learning</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Explanatory note -->
+          <div class="skills-learning-callout">
+            <p class="skills-callout-text">
+              <strong>Deliberate Progression:</strong> I prioritize mastering core languages and web fundamentals first before adopting high-level abstraction frameworks.
+            </p>
+            <span class="skills-callout-badge">FOUNDATIONS FIRST</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. SELECTED WORK / PROJECTS -->
+    <section class="section-projects" id="experiments">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">03 / SELECTED EXPERIMENTS</span>
+          <h2 class="section-title">Things I've been building.</h2>
+          <p class="section-subtitle">Real concepts and interface experiments exploring practical web utility.</p>
+        </header>
+
+        <div class="projects-stack">
+
+          <!-- PROJECT 01: Restaurant QR Menu -->
+          <article class="project-item">
+            <div class="project-grid">
+              
+              <!-- Content -->
+              <div class="project-content">
+                <div class="project-header">
+                  <div class="project-meta-line">
+                    <span class="project-number">01</span>
+                    <span>·</span>
+                    <span>CONCEPT &amp; PROTOTYPE</span>
+                    <span>·</span>
+                    <span>FRONTEND</span>
+                  </div>
+
+                  <h3 class="project-name">Restaurant QR Menu</h3>
+
+                  <p class="project-description">
+                    A digital menu concept designed to help restaurants present their food menu through a simple QR-code-based experience.
+                  </p>
+                </div>
+
+                <div class="project-footer">
+                  <div class="project-status active">
+                    <span class="project-status-dot"></span>
+                    <span>Concept &amp; Interface Prototype</span>
+                  </div>
+
+                  <button type="button" class="project-inspect-btn" data-project="1" aria-label="Inspect Restaurant QR Menu Concept">
+                    <span>Inspect</span>
+                    <span aria-hidden="true">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Monochromatic Visual Preview -->
+              <div class="project-visual">
+                <svg class="project-diagram" viewBox="0 0 360 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Device Frame -->
+                  <rect x="70" y="20" width="220" height="220" rx="14" fill="#0c0c0c" stroke="#222222" stroke-width="1.5"/>
+                  <line x1="70" y1="58" x2="290" y2="58" stroke="#1c1c1c" stroke-width="1"/>
+                  <circle cx="92" cy="39" r="4" fill="#3fd6c6"/>
+                  <rect x="110" y="36" width="80" height="6" rx="3" fill="#222222"/>
+                  <!-- QR Code Preview Graphic -->
+                  <rect x="94" y="74" width="46" height="46" rx="4" fill="#151515" stroke="#303030"/>
+                  <rect x="100" y="80" width="14" height="14" fill="#8a8d91"/>
+                  <rect x="120" y="80" width="14" height="14" fill="#8a8d91"/>
+                  <rect x="100" y="100" width="14" height="14" fill="#8a8d91"/>
+                  <rect x="120" y="100" width="6" height="6" fill="#3fd6c6"/>
+                  <!-- Menu list lines -->
+                  <rect x="154" y="78" width="105" height="8" rx="2" fill="#a6a9ad"/>
+                  <rect x="154" y="94" width="70" height="6" rx="2" fill="#303030"/>
+                  <rect x="154" y="108" width="45" height="6" rx="2" fill="#222222"/>
+                  <!-- Dish Card 1 -->
+                  <rect x="94" y="136" width="172" height="40" rx="6" fill="#121212" stroke="#222222"/>
+                  <rect x="106" y="148" width="75" height="7" rx="2" fill="#f2f2f2"/>
+                  <rect x="106" y="161" width="50" height="5" rx="2" fill="#54565a"/>
+                  <rect x="230" y="150" width="24" height="12" rx="3" fill="#1f1f1f"/>
+                  <!-- Dish Card 2 -->
+                  <rect x="94" y="184" width="172" height="40" rx="6" fill="#121212" stroke="#222222"/>
+                  <rect x="106" y="196" width="90" height="7" rx="2" fill="#f2f2f2"/>
+                  <rect x="106" y="209" width="40" height="5" rx="2" fill="#54565a"/>
+                </svg>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- PROJECT 02: Inventory Management System -->
+          <article class="project-item">
+            <div class="project-grid">
+              
+              <!-- Content -->
+              <div class="project-content">
+                <div class="project-header">
+                  <div class="project-meta-line">
+                    <span class="project-number">02</span>
+                    <span>·</span>
+                    <span>IN DEVELOPMENT</span>
+                    <span>·</span>
+                    <span>FULL-STACK ARCHITECTURE</span>
+                  </div>
+
+                  <h3 class="project-name">Inventory Management System</h3>
+
+                  <p class="project-description">
+                    A hardware-store management concept focused on stock tracking, purchase records, sales, and profit calculations.
+                  </p>
+                </div>
+
+                <div class="project-footer">
+                  <div class="project-status active">
+                    <span class="project-status-dot" style="background-color: var(--accent-mint);"></span>
+                    <span>System Architecture &amp; Database Design</span>
+                  </div>
+
+                  <button type="button" class="project-inspect-btn" data-project="2" aria-label="Inspect Inventory Management System Concept">
+                    <span>Inspect</span>
+                    <span aria-hidden="true">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Monochromatic Visual Preview -->
+              <div class="project-visual">
+                <svg class="project-diagram" viewBox="0 0 360 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Dashboard Canvas -->
+                  <rect x="30" y="25" width="300" height="210" rx="10" fill="#0c0c0c" stroke="#222222" stroke-width="1.5"/>
+                  <line x1="30" y1="62" x2="330" y2="62" stroke="#1c1c1c" stroke-width="1"/>
+                  <rect x="50" y="40" width="80" height="8" rx="2" fill="#a6a9ad"/>
+                  <rect x="270" y="38" width="40" height="12" rx="4" fill="#181818" stroke="#303030"/>
+                  <!-- Stats Row -->
+                  <rect x="50" y="78" width="68" height="42" rx="6" fill="#141414" stroke="#222222"/>
+                  <rect x="60" y="88" width="35" height="5" rx="1.5" fill="#54565a"/>
+                  <rect x="60" y="98" width="45" height="12" rx="2" fill="#f2f2f2"/>
+
+                  <rect x="126" y="78" width="68" height="42" rx="6" fill="#141414" stroke="#222222"/>
+                  <rect x="136" y="88" width="35" height="5" rx="1.5" fill="#54565a"/>
+                  <rect x="136" y="98" width="45" height="12" rx="2" fill="#3fd6c6"/>
+
+                  <rect x="202" y="78" width="108" height="42" rx="6" fill="#141414" stroke="#222222"/>
+                  <rect x="212" y="88" width="45" height="5" rx="1.5" fill="#54565a"/>
+                  <rect x="212" y="98" width="60" height="12" rx="2" fill="#f2f2f2"/>
+
+                  <!-- Data Table Ledger -->
+                  <rect x="50" y="132" width="260" height="85" rx="6" fill="#111111" stroke="#222222"/>
+                  <line x1="50" y1="156" x2="310" y2="156" stroke="#1f1f1f"/>
+                  <line x1="50" y1="184" x2="310" y2="184" stroke="#1f1f1f"/>
+                  <circle cx="65" cy="144" r="3" fill="#54565a"/>
+                  <rect x="80" y="142" width="70" height="5" rx="1" fill="#8a8d91"/>
+                  <rect x="190" y="142" width="40" height="5" rx="1" fill="#54565a"/>
+                  <rect x="260" y="142" width="35" height="5" rx="1" fill="#3fd6c6"/>
+                  <!-- Row 1 -->
+                  <rect x="62" y="168" width="90" height="5" rx="1" fill="#f2f2f2"/>
+                  <rect x="190" y="168" width="30" height="5" rx="1" fill="#8a8d91"/>
+                  <rect x="260" y="168" width="35" height="5" rx="1" fill="#f2f2f2"/>
+                  <!-- Row 2 -->
+                  <rect x="62" y="196" width="75" height="5" rx="1" fill="#f2f2f2"/>
+                  <rect x="190" y="196" width="30" height="5" rx="1" fill="#8a8d91"/>
+                  <rect x="260" y="196" width="35" height="5" rx="1" fill="#f2f2f2"/>
+                </svg>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- PROJECT 03: Attendance Dashboard -->
+          <article class="project-item">
+            <div class="project-grid">
+              
+              <!-- Content -->
+              <div class="project-content">
+                <div class="project-header">
+                  <div class="project-meta-line">
+                    <span class="project-number">03</span>
+                    <span>·</span>
+                    <span>CONCEPT</span>
+                    <span>·</span>
+                    <span>UI/UX &amp; FRONTEND</span>
+                  </div>
+
+                  <h3 class="project-name">Attendance Dashboard</h3>
+
+                  <p class="project-description">
+                    A clean attendance-management interface concept designed to make attendance tracking easier.
+                  </p>
+                </div>
+
+                <div class="project-footer">
+                  <div class="project-status">
+                    <span class="project-status-dot"></span>
+                    <span>Interface Architecture Concept</span>
+                  </div>
+
+                  <button type="button" class="project-inspect-btn" data-project="3" aria-label="Inspect Attendance Dashboard Concept">
+                    <span>Inspect</span>
+                    <span aria-hidden="true">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Monochromatic Visual Preview -->
+              <div class="project-visual">
+                <svg class="project-diagram" viewBox="0 0 360 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Frame -->
+                  <rect x="40" y="25" width="280" height="210" rx="10" fill="#0c0c0c" stroke="#222222" stroke-width="1.5"/>
+                  <line x1="40" y1="60" x2="320" y2="60" stroke="#1c1c1c" stroke-width="1"/>
+                  <rect x="60" y="38" width="110" height="8" rx="2" fill="#a6a9ad"/>
+                  <!-- Calendar/Metric Grid -->
+                  <g fill="#181818">
+                    <rect x="60" y="80" width="36" height="28" rx="4"/>
+                    <rect x="102" y="80" width="36" height="28" rx="4"/>
+                    <rect x="144" y="80" width="36" height="28" rx="4"/>
+                    <rect x="186" y="80" width="36" height="28" rx="4"/>
+                    <rect x="228" y="80" width="36" height="28" rx="4"/>
+                    <rect x="270" y="80" width="30" height="28" rx="4"/>
+
+                    <rect x="60" y="114" width="36" height="28" rx="4"/>
+                    <rect x="102" y="114" width="36" height="28" rx="4"/>
+                    <rect x="144" y="114" width="36" height="28" rx="4"/>
+                    <rect x="186" y="114" width="36" height="28" rx="4"/>
+                    <rect x="228" y="114" width="36" height="28" rx="4"/>
+                    <rect x="270" y="114" width="30" height="28" rx="4"/>
+                  </g>
+                  <!-- Presence highlights -->
+                  <circle cx="78" cy="94" r="4" fill="#3fd6c6"/>
+                  <circle cx="120" cy="94" r="4" fill="#3fd6c6"/>
+                  <circle cx="162" cy="94" r="4" fill="#3fd6c6"/>
+                  <circle cx="204" cy="94" r="4" fill="#54565a"/>
+                  <circle cx="246" cy="94" r="4" fill="#3fd6c6"/>
+                  <circle cx="78" cy="128" r="4" fill="#3fd6c6"/>
+                  <circle cx="120" cy="128" r="4" fill="#3fd6c6"/>
+                  <circle cx="162" cy="128" r="4" fill="#54565a"/>
+                  <circle cx="204" cy="128" r="4" fill="#3fd6c6"/>
+                  <circle cx="246" cy="128" r="4" fill="#3fd6c6"/>
+                  <!-- Summary Bar -->
+                  <rect x="60" y="160" width="240" height="55" rx="6" fill="#121212" stroke="#222222"/>
+                  <rect x="75" y="175" width="80" height="7" rx="2" fill="#f2f2f2"/>
+                  <rect x="75" y="188" width="140" height="6" rx="2" fill="#54565a"/>
+                  <rect x="235" y="174" width="50" height="24" rx="4" fill="#1a1a1a" stroke="#303030"/>
+                  <text x="260" y="190" fill="#3fd6c6" font-family="monospace" font-size="11" text-anchor="middle" font-weight="600">92%</text>
+                </svg>
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CONTACT SECTION -->
+    <section class="section-contact" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-grid">
+            
+            <!-- Left Info -->
+            <div class="contact-info">
+              <span class="section-label">04 / GET IN TOUCH</span>
+              <h2 class="contact-heading">Have an idea? Let's build something meaningful.</h2>
+              <p class="contact-desc">
+                I'm always interested in exploring new ideas, learning new technologies, and connecting with people who love creating things for the web.
+              </p>
+
+              <div class="contact-actions">
+                <a href="mailto:ayushsharma26.2004@gmail.com?subject=Hello%20Ayush%20—%20Collaboration%20Inquiry" class="btn-pill btn-primary">
+                  Say Hello
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </a>
+                <a href="https://github.com/RoggAyush" target="_blank" rel="noopener noreferrer" class="btn-pill btn-secondary">
+                  Follow My Journey
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Links Column -->
+            <div class="contact-links-column">
+              <!-- Direct Email Box -->
+              <div class="contact-direct-box">
+                <span class="contact-direct-label">DIRECT EMAIL INQUIRY</span>
+                <div class="contact-email-row">
+                  <span class="contact-email-text">ayushsharma26.2004@gmail.com</span>
+                  <button type="button" class="contact-copy-btn" aria-label="Copy email address to clipboard">
+                    Copy Email
+                  </button>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div class="contact-social-list">
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/ayush_26_sharma/" target="_blank" rel="noopener noreferrer" class="contact-social-link">
+                  <span>Instagram</span>
+                  <span class="contact-social-meta">@ayush_26_sharma ↗</span>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/RoggAyush" target="_blank" rel="noopener noreferrer" class="contact-social-link">
+                  <span>GitHub</span>
+                  <span class="contact-social-meta">@RoggAyush ↗</span>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/ayush-sharma-223799351" target="_blank" rel="noopener noreferrer" class="contact-social-link">
+                  <span>LinkedIn</span>
+                  <span class="contact-social-meta">ayush-sharma-223799351 ↗</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 9. FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-identity">
+          <span class="footer-name">AYUSH SHARMA</span>
+          <span class="footer-role">WEB DEVELOPER</span>
+        </div>
+
+        <ul class="footer-nav">
+          <li><a href="https://github.com/RoggAyush" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/ayush-sharma-223799351" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/ayush_26_sharma/" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Ayush Sharma. Crafted with precision &amp; restraint.
+        </div>
+
+        <button type="button" class="btn-back-to-top" aria-label="Scroll back to top of page">
+          <span>Back to Top</span>
+          <span aria-hidden="true">↑</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Concept Inspector Modal -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <button type="button" class="modal-close-btn" aria-label="Close project modal">&times;</button>
+      <div class="modal-header">
+        <div class="modal-number" id="modal-number">PROJECT SPECIFICATION</div>
+        <h3 class="modal-title" id="modal-title">Project Name</h3>
+      </div>
+      <div class="modal-body">
+        <p id="modal-desc"></p>
+        <div class="modal-details-grid">
+          <div class="modal-detail-item">
+            <span class="modal-detail-label">TECHNOLOGY STACK</span>
+            <span class="modal-detail-val" id="modal-stack"></span>
+          </div>
+          <div class="modal-detail-item">
+            <span class="modal-detail-label">DEVELOPMENT STAGE</span>
+            <span class="modal-detail-val" id="modal-stage"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" role="status" aria-live="polite"></div>
+
+  <!-- Vanilla JavaScript -->
+  <script src="./script.js" defer></script>
+</body>
+</html>
